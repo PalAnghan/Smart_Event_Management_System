@@ -1,88 +1,106 @@
 ::: {align="center"}
-# 🎟️ Smart Event Management System
+`<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=210&section=header&text=Smart%20Event%20Management%20System&fontSize=34&fontColor=ffffff&fontAlignY=38&desc=MySQL%20%7C%20SQL%20Practical%20Project&descAlignY=60&descSize=16" width="100%" alt="Smart Event Management System banner" />`{=html}
 
-### A MySQL database project for managing events, venues, organizers, attendees, tickets, and payments.
+`<br/>`{=html}
 
-```{=html}
-<p>
-```
-`<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Built+with+MySQL;Designed+for+SQL+Practical+Examination;12+SQL+Topics+%7C+Real+Database+Relationships" alt="Animated typing banner" />`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p>
-```
-`<img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />`{=html}
-`<img src="https://img.shields.io/badge/Language-SQL-025E8C?style=for-the-badge&logo=databricks&logoColor=white" alt="SQL" />`{=html}
-`<img src="https://img.shields.io/badge/Project-Final%20Practical-success?style=for-the-badge" alt="Final practical project" />`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p>
-```
-`<a href="#-project-overview">`{=html}Overview`</a>`{=html} •
-`<a href="#-database-schema">`{=html}Database Schema`</a>`{=html} •
-`<a href="#-sql-topics-covered">`{=html}SQL Topics`</a>`{=html} •
-`<a href="#-how-to-run">`{=html}How to Run`</a>`{=html}
-```{=html}
-</p>
-```
+`<a href="https://github.com/PalAnghan">`{=html}
+`<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=900&color=36BCF7&center=true&vCenter=true&width=650&lines=Hello%2C+I'm+Pal+Anghan+%F0%9F%91%8B;SQL+%26+Database+Development;Learning+by+Building+Real+Projects" alt="Animated introduction" />`{=html}
+`</a>`{=html}
+
+`<br/>`{=html}
+
+`<img src="https://img.shields.io/badge/MySQL-8.0%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />`{=html}
+`<img src="https://img.shields.io/badge/SQL-Database-025E8C?style=for-the-badge&logo=databricks&logoColor=white" alt="SQL" />`{=html}
+`<img src="https://img.shields.io/badge/Project-Final%20Practical-16A34A?style=for-the-badge" alt="Final practical project" />`{=html}
+`<img src="https://img.shields.io/badge/Status-Completed-2563EB?style=for-the-badge" alt="Project status" />`{=html}
+
+`<br/>`{=html}`<br/>`{=html}
+
+`<a href="#-overview">`{=html}Overview`</a>`{=html} •
+`<a href="#-features">`{=html}Features`</a>`{=html} •
+`<a href="#-database-design">`{=html}Database Design`</a>`{=html} •
+`<a href="#-sql-concepts-covered">`{=html}SQL Concepts`</a>`{=html} •
+`<a href="#-getting-started">`{=html}Getting Started`</a>`{=html} •
+`<a href="#-developer">`{=html}Developer`</a>`{=html}
 :::
 
 ------------------------------------------------------------------------
 
-## 📌 Project Overview
+## 📌 Overview
 
-**Smart Event Management System** is a database project developed using
-**MySQL** as part of my final practical examination.
+**Smart Event Management System** is a relational database project
+developed using **MySQL** for my final practical examination.
 
-The database is designed to help manage event information and the
-related records for venues, organizers, attendees, ticket bookings, and
-payments. It demonstrates how relational tables work together using
-primary keys, foreign keys, joins, subqueries, aggregate functions, and
-other SQL features.
+It provides a structured way to store and manage event-related
+information, including venues, organizers, attendees, ticket bookings,
+and payments. The project demonstrates practical SQL skills through
+database relationships, CRUD operations, joins, subqueries, aggregate
+functions, date and string functions, window functions, and `CASE`
+expressions.
 
-## 🎯 Project Objectives
+> **Project focus:** Database design, data management, and SQL query
+> practice.
 
--   Manage event and venue information.
--   Store organizer and attendee details.
--   Maintain ticket booking records.
--   Track payment amounts and payment statuses.
--   Generate useful reports using SQL queries.
--   Practise database relationships and SQL concepts.
+## ✨ Features
 
-## 🧰 Technology Used
+-   **Event records** --- Store event names, dates, ticket prices, and
+    seat details.
+-   **Venue management** --- Maintain venue names, locations, and
+    capacities.
+-   **Organizer records** --- Store organizer names and contact
+    information.
+-   **Attendee records** --- Maintain attendee contact details.
+-   **Ticket bookings** --- Connect attendees with events and store
+    booking dates and statuses.
+-   **Payment tracking** --- Store payment amounts, dates, and payment
+    statuses.
+-   **SQL reporting** --- Retrieve useful information using joins,
+    grouping, aggregate functions, and subqueries.
+-   **Advanced SQL practice** --- Apply window functions and conditional
+    `CASE` expressions.
 
-  Technology           Purpose
-  -------------------- -------------------------------------
-  MySQL                Relational database management
-  SQL                  Creating tables and querying data
-  Visual Studio Code   Writing and managing the SQL script
+## 🧰 Tech Stack
 
-## 🗂️ Database Schema
+  Tool / Technology          Use
+  -------------------------- -------------------------------------------------
+  MySQL                      Relational database
+  SQL                        Database creation, data operations, and queries
+  Visual Studio Code         SQL script editing
+  MySQL extension / client   Running SQL statements
 
-The database name is `event_management` and it contains **6 tables**.
+## 🗃️ Database Design
 
-  Table          Purpose
-  -------------- --------------------------------------------------
-  `venues`       Stores venue name, location, and capacity
-  `organizers`   Stores organizer contact details
-  `events`       Stores event details, dates, prices, and seats
-  `attendees`    Stores attendee contact details
-  `tickets`      Stores event bookings and booking status
-  `payments`     Stores ticket payment details and payment status
+The database is named `event_management` and contains **6 related
+tables**.
 
-### 🔗 Table Relationships
+  -----------------------------------------------------------------------
+  Table                               Main purpose
+  ----------------------------------- -----------------------------------
+  `venues`                            Venue name, location, and capacity
+
+  `organizers`                        Organizer name and contact details
+
+  `events`                            Event date, venue, organizer,
+                                      ticket price, and seat counts
+
+  `attendees`                         Attendee name and contact details
+
+  `tickets`                           Event booking, attendee, booking
+                                      date, and booking status
+
+  `payments`                          Ticket payment amount, status, and
+                                      payment date
+  -----------------------------------------------------------------------
+
+### Entity Relationship Diagram
 
 ``` mermaid
 erDiagram
     VENUES ||--o{ EVENTS : hosts
     ORGANIZERS ||--o{ EVENTS : manages
-    EVENTS ||--o{ TICKETS : has
+    EVENTS ||--o{ TICKETS : includes
     ATTENDEES ||--o{ TICKETS : books
-    TICKETS ||--o{ PAYMENTS : has
+    TICKETS ||--o{ PAYMENTS : receives
 
     VENUES {
         int venue_id PK
@@ -90,12 +108,14 @@ erDiagram
         varchar location
         int capacity
     }
+
     ORGANIZERS {
         int organizer_id PK
         varchar organizer_name
         varchar contact_email
         varchar phone_number
     }
+
     EVENTS {
         int event_id PK
         varchar event_name
@@ -106,12 +126,14 @@ erDiagram
         int total_seats
         int available_seats
     }
+
     ATTENDEES {
         int attendee_id PK
         varchar name
         varchar email
         varchar phone_number
     }
+
     TICKETS {
         int ticket_id PK
         int event_id FK
@@ -119,6 +141,7 @@ erDiagram
         date booking_date
         varchar status
     }
+
     PAYMENTS {
         int payment_id PK
         int ticket_id FK
@@ -128,275 +151,83 @@ erDiagram
     }
 ```
 
-## 📚 SQL Topics Covered
+### Relationship Summary
 
-This project covers the following 12 practical topics:
+-   One venue can host multiple events.
+-   One organizer can manage multiple events.
+-   One event can have multiple ticket bookings.
+-   One attendee can book tickets for multiple events.
+-   A ticket can be associated with payment records.
 
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}01 --- CRUD Operations`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `INSERT` --- Add records.
--   `SELECT` --- Retrieve records.
--   `UPDATE` --- Modify records.
--   `DELETE` --- Remove records.
+## 📚 SQL Concepts Covered
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}02 --- SQL Clauses`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `WHERE`
--   `HAVING`
--   `LIMIT`
+The project script is organized around these **12 practical topics**.
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}03 --- SQL Operators`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `AND`
--   `OR`
--   `NOT`
--   `IN`
+  ------------------------------------------------------------------------
+                            \# Topic                 SQL concepts
+  ---------------------------- --------------------- ---------------------
+                            01 CRUD Operations       `INSERT`, `SELECT`,
+                                                     `UPDATE`, `DELETE`
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}04 --- Sorting & Grouping`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `ORDER BY`
--   `GROUP BY`
+                            02 SQL Clauses           `WHERE`, `HAVING`,
+                                                     `LIMIT`
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}05 --- Aggregate Functions`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `SUM()`
--   `AVG()`
--   `MAX()`
--   `MIN()`
--   `COUNT()`
+                            03 SQL Operators         `AND`, `OR`, `NOT`,
+                                                     `IN`
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}06 --- Primary Key & Foreign Key`</strong>`{=html}
-```{=html}
-</summary>
-```
--   Primary key constraints.
--   Foreign key relationships.
--   Unique constraint for an attendee's event booking.
+                            04 Sorting & Grouping    `ORDER BY`,
+                                                     `GROUP BY`
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}07 --- SQL Joins`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `INNER JOIN`
--   `LEFT JOIN`
--   `RIGHT JOIN`
--   `FULL OUTER JOIN` equivalent using `UNION`
+                            05 Aggregate Functions   `SUM()`, `AVG()`,
+                                                     `MAX()`, `MIN()`,
+                                                     `COUNT()`
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}08 --- Subqueries`</strong>`{=html}
-```{=html}
-</summary>
-```
--   Scalar subquery with `AVG()`.
--   Grouped subqueries using `GROUP BY` and `HAVING`.
--   `IN` with a subquery.
+                            06 Key Relationships     Primary key, foreign
+                                                     key, unique
+                                                     constraint
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}09 --- Date & Time Functions`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `MONTH()`
--   `DATEDIFF()`
--   `CURDATE()`
--   `DATE_FORMAT()`
+                            07 Joins                 `INNER`, `LEFT`,
+                                                     `RIGHT`,
+                                                     `FULL OUTER JOIN`
+                                                     equivalent
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}10 --- String Functions`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `UPPER()`
--   `TRIM()`
--   `IFNULL()`
+                            08 Subqueries            Nested `SELECT`,
+                                                     `IN`, aggregate
+                                                     subqueries
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}11 --- Window Functions`</strong>`{=html}
-```{=html}
-</summary>
-```
--   `RANK()`
--   `SUM() OVER()`
--   `COUNT() OVER()`
--   `PARTITION BY`
+                            09 Date & Time Functions `MONTH()`,
+                                                     `DATEDIFF()`,
+                                                     `CURDATE()`,
+                                                     `DATE_FORMAT()`
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}12 --- CASE Expressions`</strong>`{=html}
-```{=html}
-</summary>
-```
--   Categorize event demand based on available seats.
--   Display readable payment status labels.
+                            10 String Functions      `UPPER()`, `TRIM()`,
+                                                     `IFNULL()`
 
-```{=html}
-</details>
-```
-## ▶️ How to Run
+                            11 Window Functions      `RANK()`,
+                                                     `SUM() OVER()`,
+                                                     `COUNT() OVER()`
 
-### Prerequisites
+                            12 CASE Expressions      Conditional event
+                                                     demand and payment
+                                                     labels
+  ------------------------------------------------------------------------
 
--   MySQL Server 8.0 or later.
--   MySQL Workbench, VS Code with a MySQL extension, or another MySQL
-    client.
+## 💻 Sample SQL Queries
 
-### Steps
-
-1.  Clone this repository:
-
-    ``` bash
-    git clone https://github.com/PalAnghan/Smart_Event_Management_System.git
-    ```
-
-2.  Open the project folder in VS Code or your preferred SQL editor.
-
-3.  Open `event_management.sql`.
-
-4.  Connect to your MySQL server.
-
-5.  Execute the SQL script.
-
-6.  Select the database and check the tables:
-
-    ``` sql
-    USE event_management;
-    SHOW TABLES;
-    ```
-
-## 📁 Project Structure
-
-``` text
-Smart_Event_Management_System/
-│
-├── event_management.sql
-└── README.md
-```
-
-## 📊 Example Queries
-
-**1. Display all events**
+### 1. Display all events
 
 ``` sql
 SELECT * FROM events;
 ```
 
-**2. Find the average ticket price**
+### 2. Find the average ticket price
 
 ``` sql
 SELECT AVG(ticket_price) AS average_ticket_price
 FROM events;
 ```
 
-**3. Display event details with venue information**
+### 3. Show events with their venue details
 
 ``` sql
 SELECT e.event_name, v.venue_name, v.location
@@ -405,47 +236,116 @@ INNER JOIN venues v
 ON e.venue_id = v.venue_id;
 ```
 
-**4. Rank events by successful payment revenue**
+### 4. Find events priced above the average ticket price
+
+``` sql
+SELECT *
+FROM events
+WHERE ticket_price > (
+    SELECT AVG(ticket_price)
+    FROM events
+);
+```
+
+### 5. Rank events by successful payment revenue
 
 ``` sql
 SELECT t.event_id,
        SUM(p.amount_paid) AS total_revenue,
-       RANK() OVER (ORDER BY SUM(p.amount_paid) DESC) AS event_rank
+       RANK() OVER (
+           ORDER BY SUM(p.amount_paid) DESC
+       ) AS event_rank
 FROM tickets t
-JOIN payments p ON t.ticket_id = p.ticket_id
+JOIN payments p
+ON t.ticket_id = p.ticket_id
 WHERE p.payment_status = 'Success'
 GROUP BY t.event_id;
 ```
 
-## ⚠️ Important Note About Sample Data
+## 🚀 Getting Started
 
-The sample event and booking dates in the SQL script are from **2024**.
-Therefore, queries that use `CURDATE()` to find upcoming events or
-remaining days may return no rows when run after those dates. This is
-expected for the supplied sample data. Update the sample dates if you
-want to test upcoming-event results.
+### Requirements
 
-## 🎓 Learning Outcomes
+-   MySQL Server 8.0 or later.
+-   Visual Studio Code with a MySQL extension, MySQL Workbench, or
+    another MySQL client.
+-   Git (optional, for cloning the repository).
 
-Through this practical project, I practised:
+### 1. Clone the repository
+
+``` bash
+git clone https://github.com/PalAnghan/Smart_Event_Management_System.git
+```
+
+### 2. Open the project
+
+Open the downloaded folder in Visual Studio Code.
+
+### 3. Run the SQL file
+
+Open `event_management.sql`, connect to your MySQL server, and execute
+the script.
+
+### 4. Verify the database
+
+``` sql
+USE event_management;
+SHOW TABLES;
+```
+
+## 📂 Project Structure
+
+``` text
+Smart_Event_Management_System/
+│
+├── event_management.sql
+└── README.md
+```
+
+## 🧠 What I Practised
 
 -   Designing a relational database with multiple connected tables.
--   Creating and managing tables using SQL.
+-   Creating tables and inserting sample records.
 -   Applying primary key, foreign key, and unique constraints.
--   Writing queries for reports and data analysis.
--   Using joins, subqueries, aggregate functions, and window functions.
--   Working with date, string, and conditional SQL functions.
+-   Writing SQL queries for filtering and reporting.
+-   Combining tables with different types of joins.
+-   Using aggregate functions and subqueries.
+-   Applying date, string, and conditional functions.
+-   Analysing query results with window functions.
 
-## 👨‍💻 Author
+## ⚠️ Note About Sample Dates
 
-**Pal Anghan**
+The sample event dates shown in the project data are in **2024**.
+Queries that check for upcoming events using `CURDATE()` may return no
+rows when run after those dates. This is expected with the existing
+sample data. Update the sample dates if you want to test upcoming-event
+queries.
 
-GitHub: [@PalAnghan](https://github.com/PalAnghan)
+## 👨‍💻 Developer
+
+::: {align="center"}
+`<a href="https://github.com/PalAnghan">`{=html}
+`<img src="https://github-readme-stats.vercel.app/api?username=PalAnghan&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="155" alt="Pal Anghan GitHub statistics" />`{=html}
+`</a>`{=html}
+`<a href="https://github.com/PalAnghan?tab=repositories">`{=html}
+`<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PalAnghan&layout=compact&theme=tokyonight&hide_border=true" height="155" alt="Most used languages" />`{=html}
+`</a>`{=html}
+
+`<br/>`{=html}
+
+`<a href="https://github.com/PalAnghan">`{=html}
+`<img src="https://img.shields.io/badge/GitHub-PalAnghan-181717?style=for-the-badge&logo=github" alt="GitHub profile" />`{=html}
+`</a>`{=html}
+
+**Pal Anghan**\
+*BCA Graduate \| Aspiring Developer \| Building with SQL, Python & Web
+Technologies*
+:::
 
 ------------------------------------------------------------------------
 
 ::: {align="center"}
-### ⭐ Thank you for checking out my project!
+**If you find this project useful, consider giving it a ⭐ on GitHub.**
 
-*Created as part of my final practical examination.*
+Made with 💙 and SQL.
 :::
